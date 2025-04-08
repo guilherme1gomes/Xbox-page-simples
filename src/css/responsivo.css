@@ -1,0 +1,134 @@
+@media (max-width: 319px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        display: none;
+    }
+
+    .container-gamepass {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .textos-gamepass {
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding: 50px;
+    }
+
+    .textos-gamepass img {
+        width: 180px;
+    }
+
+    .textos-gamepass h1 {
+        font-size: 52px;
+    }
+
+    .textos-gamepass p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--branco);
+        text-align: left;
+        width: 200px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .textos-gamepass button {
+        width: 190px;
+        font-size: 14px
+    }
+
+    .jogos-gamepass {
+        height: 500px;
+    }
+
+    .container-jogos-favoritos {
+        gap: 30px;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-jogo-favorito h1 {
+        color: var(--branco);
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .ultimate-container {
+        align-items: center;
+        background-position: center;
+    }
+
+    .card-final {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .card-final h1 {
+        font-size: 28px;
+    }
+
+    .textos-container-ultimate {
+        display: none;
+    }
+
+    .card-final button {
+        width: 130px;
+    }
+
+    .card-final div ul li {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .perguntas-texto h1 {
+        font-size: 38px;
+    }
+
+    .faq {
+        height: 700px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+
+    .faq-answer.open {
+        max-height: 500px;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    footer h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {}
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1200px) {}

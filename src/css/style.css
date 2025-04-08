@@ -1,0 +1,396 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --cor-de-fundo: #0c0c0c;
+    --branco: #fff;
+    --verde-claro: #9bf00b;
+    --cinza-claro: silver;
+    --verde-escuro: #054b16;
+}
+
+* {
+    scrollbar-color: var(--verde-claro) var(--cor-de-fundo);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 160px;
+}
+
+header a {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px;
+    position: relative;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 50%;
+    height: 2px;
+    background-color: var(--verde-claro);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+header a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+header button {
+    background: var(--verde-claro);
+    border: none;
+    color: rgb(12, 12, 12);
+    padding: 15px;
+    border-radius: 5px;
+    width: 240px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .logo-xbox {
+    width: 144px;
+    height: 44px;
+    max-width: 100%;
+}
+
+.container-gamepass {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textos-gamepass {
+    height: 100%;
+    width: 1400px;
+    text-align: left;
+    padding: 70px;
+}
+
+.textos-gamepass img {
+    width: 240px;
+    max-width: 100%;
+}
+
+.textos-gamepass h1 {
+    color: var(--branco);
+    font-size: 86px;
+    font-weight: 900;
+}
+
+.textos-gamepass div {
+    width: 55px;
+    height: 12px;
+    background-color: var(--verde-claro);
+    border-radius: 10px 0px 10px 0px;
+    margin-bottom: 25px;
+}
+
+.textos-gamepass p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--branco);
+    text-align: left;
+    width: 700px;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.textos-gamepass button {
+    background-color: var(--verde-claro);
+    border: none;
+    padding: 6px;
+    width: 220px;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--verde-escuro);
+    cursor: pointer;
+    position: relative;
+    transition: 0.9s ease;
+}
+
+.textos-gamepass button i {
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.textos-gamepass button:hover {
+    transform: scale(0.9);
+    color: var(--cor-de-fundo);
+}
+
+.textos-gamepass button:hover i {
+    transform: translateX(5px);
+}
+
+.jogos-gamepass {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.jogos-gamepass::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    pointer-events: none;
+}
+
+.jogos-gamepass img {
+    max-width: 100%;
+    min-width: 100px;
+    width: 33.33%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container-jogos-favoritos {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mySwiper {
+    width: 1200px;
+}
+
+.swiper-wrapper div img {
+    max-width: 100%;
+    height: 318px;
+    width: 235px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--branco);
+    background-color: #ffffff94;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: black;
+}
+
+.texto-jogo-favorito h1 {
+    color: var(--branco);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.ultimate-container {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url("https://cms-assets.xboxservices.com/assets/ae/50/ae508467-2673-43d5-9fb9-53570ac3a51d.jpg?n=XGPU_Super-Hero-1400_Update-10-31-24_1920x1080.jpg");
+}
+
+.card-final {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10%;
+}
+
+.card-final h1 {
+    color: var(--branco);
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-final p {
+    color: var(--branco);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-final button {
+    background-color: var(--verde-claro);
+    border: none;
+    padding: 6px;
+    width: 160px;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--verde-escuro);
+    cursor: pointer;
+    position: relative;
+    transition: 0.9s ease;
+}
+
+.card-final button i {
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.card-final button:hover {
+    transform: scale(0.9);
+    color: var(--cor-de-fundo);
+}
+
+.card-final button:hover i {
+    transform: translateX(5px);
+}
+
+.card-final div ul li {
+    color: var(--branco);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-final ul i {
+    color: var(--verde-claro);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.textos-container-ultimate {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.textos-container-ultimate h1 {
+    color: var(--branco);
+    font-size: 78px;
+    font-weight: 900;  
+}
+
+.textos-container-ultimate img {
+    width: 230px;
+    max-width: 100%;
+}
+
+.textos-container-ultimate div {
+    width: 55px;
+    height: 12px;
+    background-color: var(--verde-claro);
+    border-radius: 10px 0px 10px 0px;
+    margin-bottom: 25px;
+}
+
+.faq {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.perguntas-texto {
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+    padding: 35px;
+}
+
+.perguntas-texto h1 {
+    color: var(--branco);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.perguntas-texto span {
+    color: var(--verde-claro);
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-question {
+    padding: 35px;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--branco);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    color: var(--cinza-claro);
+    font-size: 18px;
+    line-height: 1.6;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .faq-answer.open {
+    max-height: 200px;
+    padding: 15px 20px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    color: var(--verde-claro);
+  }
+
+  .arrow.open {
+    transform: rotate(90deg);
+  }
+
+  footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--branco); 
+  }
