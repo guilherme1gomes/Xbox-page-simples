@@ -1,1 +1,1 @@
-Projeto inacabado, responsivo precisando de toques em telas 600=>
+Projeto inacabado em relação a resposividade, responsivo precisando de toques em telas 600=>
